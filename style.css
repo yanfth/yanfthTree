@@ -23,9 +23,11 @@
 
 body {
   min-height: 100vh;
+  min-height: 100dvh; /* support mobile browser bar */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 16px;
   background: linear-gradient(
     135deg,
     #1a1a2e,
@@ -38,8 +40,6 @@ body {
   );
   background-size: 400% 400%;
   animation: gradientBG 8s ease infinite;
-  font-family: "DM Sans", sans-serif;
-  overflow: hidden;
 }
 
 @keyframes gradientBG {
